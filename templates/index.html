@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora IP — CIDR y VLSM | ESCOM - IPN</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Calculadora IP — CIDR y VLSM</h1>
+      <p>Instituto Politécnico Nacional • Escuela Superior de Cómputo (ESCOM)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="cidr">Calculadora IP (CIDR)</button>
+      <button class="tab-btn" data-tab="vlsm">Calculadora IP (VLSM)</button>
+    </div>
+
+    <section id="tab-cidr" class="tab-content active card">
+      <h2>Cálculo de Subred CIDR</h2>
+      <form id="cidr-form" class="form-grid">
+        <div class="field">
+          <label for="cidr-ip">Dirección IP o IP/Prefijo</label>
+          <input type="text" id="cidr-ip" value="192.168.10.0/24" placeholder="Ej. 192.168.10.0/24" required />
+        </div>
+        <div class="field">
+          <label for="cidr-mask">Máscara opcional (si no usas /n)</label>
+          <input type="text" id="cidr-mask" placeholder="Ej. 255.255.255.0 o 24" />
+        </div>
+        <div class="field align-end">
+          <button type="submit" class="btn-primary">Calcular CIDR</button>
+        </div>
+      </form>
+
+      <div id="cidr-error" class="alert-error hidden"></div>
+
+      <div id="cidr-result" class="result-box hidden">
+        <table class="data-table">
+          <tbody id="cidr-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tab-vlsm" class="tab-content card">
+      <h2>Asignación de Subredes VLSM</h2>
+      <form id="vlsm-form">
+        <div class="vlsm-header">
+          <div class="field">
+            <label for="vlsm-base">Red Base (CIDR)</label>
+            <input type="text" id="vlsm-base" value="192.168.0.0/24" placeholder="Ej. 192.168.0.0/24" required />
+          </div>
+          <div class="actions">
+            <button type="button" id="add-subnet-btn" class="btn-secondary">+ Agregar Subred</button>
+            <button type="submit" class="btn-primary">Calcular VLSM</button>
+          </div>
+        </div>
+
+        <div id="subnets-list" class="subnets-list"></div>
+      </form>
+
+      <div id="vlsm-error" class="alert-error hidden"></div>
+
+      <div id="vlsm-result" class="result-box hidden">
+        <div id="vlsm-summary" class="summary-banner"></div>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Subred</th>
+                <th>Hosts Req.</th>
+                <th>Dirección de Red</th>
+                <th>Máscara</th>
+                <th>Rango de Hosts</th>
+                <th>Broadcast</th>
+                <th>Válidos</th>
+                <th>Desp.</th>
+              </tr>
+            </thead>
+            <tbody id="vlsm-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
