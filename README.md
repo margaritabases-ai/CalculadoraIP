@@ -2,12 +2,6 @@
 
 Aplicación web desarrollada en **Python (Flask)** para realizar cálculos de direccionamiento IPv4 mediante **CIDR** (*Classless Inter-Domain Routing*) y diseño de subredes de tamaño variable mediante **VLSM** (*Variable Length Subnet Mask*).
 
-* **Institución:** Instituto Politécnico Nacional (IPN) — Escuela Superior de Cómputo (ESCOM)
-* **Unidad de Aprendizaje:** [Nombre de la materia]
-* **Módulo:** [Nombre o número del módulo]
-* **Profesor(a):** [Nombre completo del profesor]
-* **Equipo:** Equipo [X]
-
 ---
 
 ## Enlaces del Proyecto
@@ -20,12 +14,9 @@ Aplicación web desarrollada en **Python (Flask)** para realizar cálculos de di
 
 ## Integrantes y Roles del Equipo
 
-| Integrante | Matrícula (Boleta) | Correo Institucional | Rol y Contribución |
-| :--- | :---: | :--- | :--- |
-| [Nombre Completo 1] | [202XXXXXXX] | [correo1@alumno.ipn.mx] | Lógica de conversión IPv4/binario y validación de máscaras |
-| [Nombre Completo 2] | [202XXXXXXX] | [correo2@alumno.ipn.mx] | Desarrollo de Calculadora CIDR y endpoints API |
-| [Nombre Completo 3] | [202XXXXXXX] | [correo3@alumno.ipn.mx] | Implementación del algoritmo VLSM y control de desbordamiento |
-| [Nombre Completo 4] | [202XXXXXXX] | [correo4@alumno.ipn.mx] | Interfaz web, pruebas unitarias, despliegue en Render y documentación |
+* **Cruz Guzman Carlos Alberto**
+* **Magaña Fierro Elka Natalia**
+* **Romero Ortega Israel**
 
 ---
 
