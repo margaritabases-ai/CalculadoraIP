@@ -14,7 +14,7 @@ Aplicación web desarrollada en **Python (Flask)** para realizar cálculos de di
 ## Integrantes y Roles del Equipo
 
 * **Cruz Guzman Carlos Alberto**
-* **Gonzales Hernandez Judith*
+* **Gonzales Hernandez Judith**
 * **Magaña Fierro Elka Natalia**
 * **Romero Ortega Israel**
 
