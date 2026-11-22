@@ -6,15 +6,15 @@ Aplicación web desarrollada en **Python (Flask)** para realizar cálculos de di
 
 ## Enlaces del Proyecto
 
-* **Aplicación en línea (Render):** `https://[tu-servicio].onrender.com`
-* **Repositorio en GitHub:** `https://github.com/[tu-usuario]/EquipoX_CalculadoraIP`
-* **Video explicativo:** `https://youtu.be/[enlace-no-listado]`
+* **Aplicación en línea (Render):** `https://calculadoraip.onrender.com`
+* **Repositorio en GitHub:** `https://github.com/margaritabases-ai/CalculadoraIP`
 
 ---
 
 ## Integrantes y Roles del Equipo
 
 * **Cruz Guzman Carlos Alberto**
+* **Gonzales Hernandez Judith*
 * **Magaña Fierro Elka Natalia**
 * **Romero Ortega Israel**
 
